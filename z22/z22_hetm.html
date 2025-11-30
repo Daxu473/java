@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function Pole_hetmanski(a_het, b_het) {
+                let w = parseFloat(a_het) * parseFloat(b_het);
+                document.getElementsByName("pole")[0].value = `${w.toFixed(2).toString()} cm`;
+                document.getElementsByName("wyprowadz_pole_het")[0].innerHTML = `Pole = ${w.toFixed(2).toString()} cm`;
+            }
+
+            function obwod_hetmanski(a_het, b_het) {
+                let w = (parseFloat(a_het)*2) + (parseFloat(b_het)*2);
+                document.getElementsByName("obw")[0].value = `${w.toFixed(2).toString()} cm^2`;
+                document.getElementsByName("wyprowadz_obwod_het")[0].innerHTML = `Obwód = ${w.toFixed(2).toString()} cm^2`;
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formularz" action="..." onsubmit="Pole_hetmanski(this.a_dana_het.value, this.b_dana_het.value); obwod_hetmanski(this.a_dana_het.value, this.b_dana_het.value); return false;">   
+            Podaj A= 
+                <input  size="6"  name="a_dana_het"> 
+            Podaj B= 
+                <input  size="6"  name="b_dana_het"> 
+                            <br>   <br> 
+                <input  TYPE="submit"  Value="oblicz" > 
+                            <br>   <br> 
+            Pole= 
+                <input  size="6"  name="pole"> 
+            Obwód= 
+                <input  size="6"  name="obw"> 
+        </form> 
+        <br>
+        <table>
+            <tr name="wyprowadz_pole_het"></tr>
+            <tr name="wyprowadz_obwod_het"></tr>
+        </table><br>
+
+    </body>
+</html>
