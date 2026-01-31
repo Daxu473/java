@@ -1,0 +1,31 @@
+<html> 
+<body> 
+        <textarea>
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+                function dom(numer_k,piętro_k,mieszkaniec_k){ 
+                    this.numer=numer_k; 
+                    this.piętro=piętro_k; 
+                    this.mieszkaniec=mieszkaniec_k;   
+                }
+                dom.prototype.wypisz = function ()
+                    { 
+                    alert(this.numer + ' ' + this.piętro+ ' ' + this.mieszkaniec); 
+                    }; 
+                var dom1 = new dom("1", "1", "Kowalski");
+                var dom2 = new dom('15', '3', 'Nowak'); 
+                dom1.wypisz(); 
+                dom2.wypisz(); 
+                                document.write("dostęp do właściwości"+"<br>"); 
+                    document.write("klient pierwszy"+"   "+dom1.numer+"   "+dom1.piętro+"   "+dom1.mieszkaniec); 
+            </script> 
+     </head> 
+    <body> 
+        <br> 
+        programowanie obiektowe   
+    </body> 
+</html>
+        </textarea>
+    </body> 
+</html>
