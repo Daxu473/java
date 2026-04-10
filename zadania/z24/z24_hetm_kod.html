@@ -1,0 +1,34 @@
+<html> 
+<body> 
+        <textarea>
+<!DOCTYPE html>   
+    <head>    
+        <title> proste obliczenia</title>    
+        <meta charset="utf-8">   
+    </head>  
+    <body> 
+        <div style="color:red;font: size 30px;"> 
+            <script language="JavaScript"> 
+                var liczba1=prompt("liczba1=",""); 
+                var liczba2=prompt("liczba2=",""); 
+                var x1_hetm=parseFloat(liczba1); 
+                var x2_hetm=parseFloat(liczba2);
+               
+                document.write("x1= "+x1_hetm+"&nbsp&nbsp&nbsp&nbsp&nbsp"+" x2= "+x2_hetm+"<br>");
+                var y1_hetm=3*Math.pow(x1_hetm,6/8);
+                document.write("y1="+y1_hetm.toFixed(2)+"<br>");
+
+                rad_x1_hetm=(x1_hetm*Math.PI)/180;
+                var y2_hetm=2*Math.cos(rad_x1_hetm)+3*Math.sin(rad_x1_hetm);
+                document.write("y2="+y2_hetm.toFixed(2)+"<br>");
+
+                akuku=Math.pow(x1_hetm,5)+2*Math.pow(x2_hetm,4);
+                y3_hetm=Math.pow(akuku,1/3)*Math.abs(x1_hetm-x2_hetm);
+                document.write("y3="+y3_hetm.toFixed(2)+"<br>");
+            </script> 
+        </div> 
+    </body> 
+</html> 
+        </textarea>
+    </body> 
+</html>

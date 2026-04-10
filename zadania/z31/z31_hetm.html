@@ -1,0 +1,31 @@
+<html> 
+     <head> 
+           <script type="text/javascript"> 
+                var dom = { 
+                    wysokosc: '10m', 
+                    szerokosc: '20m', 
+                    stan: 'nowy', 
+                    pokaz: function () 
+                        { 
+                            document.write(this.wysokosc + ' ' + this.szerokosc) 
+                        } 
+                    } 
+                    dom.pokaz(); 
+                    dom.budowa='w trakcie'; 
+                    dom.wypisz=function() {alert('budowa: ' + this.budowa)} 
+                    dom.wypisz(); 
+            </script> 
+     </head> 
+<body> 
+ <br> 
+   Programowanie obiektowe. <br> 
+     Obiekt  to  dom<br> 
+     Pola:<br> 
+     wysokosc<br> 
+     szerokosc<br> 
+     stan<br> 
+     metoda:  pokaz<br> 
+     nowe pole to budowa <br> 
+     nowa metoda to wypisz();<br> 
+</body> 
+</html> 

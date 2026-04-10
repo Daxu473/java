@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Hetmański Z38</title>
+    <style> 
+       #demo_hetmanski { 
+       color: red; 
+       font-size: 40px;   
+      }
+      #nazwisko{
+        color: red;
+        font-size: 1cm;
+      } 
+      #rozdzielczo{
+        color:green;
+        font-size: 12mm;
+      }
+      #szerokosc{
+        color:blue;
+        font-size: 50px;
+      }
+</style>  
+</head>
+ <html>
+       <p id="demo_hetmanski"></p>
+               <script> 
+                var w = window.innerWidth; 
+                var h = window.innerHeight; 
+                var x = document.getElementById("demo_hetmanski"); 
+                       x.innerHTML = "szerokość przeglądarki: " + w + ", wysokość: " + h + "."; 
+            </script> 
+  <body> 
+      <div id="nazwisko">Hetmański</div><br> 
+       <div id="rozdzielczo"> Pojęcie rozdzielczość ekranu/monitora oznacza……wpisz sam…… </div><br> 
+       <div id="szerokosc"> Pojęcie szerokość/wysokość ekranu przeglądarki w pikselach oznacza</div><br> 
+   </body> 
+ </html> 

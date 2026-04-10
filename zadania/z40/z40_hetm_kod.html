@@ -1,0 +1,37 @@
+<html> 
+<body> 
+        <textarea>
+<!DOCTYPE html>  
+<html lang="pl-PL">  
+<body> 
+ <div style="color:red;font-size:50px;"> 
+    <script language="JavaScript"> 
+  var x=prompt("podaj argument x=",""); 
+               var x_het=parseFloat(x);
+  var x=prompt("podaj argument x=",""); 
+               var x_hetm=parseFloat(x); 
+    document.write("czytany argument x="+x_het+"<br>");     
+ 
+                 function f_het(x_het) { 
+                            if(x_het>=1) {return 1;} 
+                            if((x_het=>-2)&&(x_het<1)) {return x_het*x_het;} 
+                            if(x_het<-2) {return 4;} 
+                  } 
+                  function f_hetm(x_hetm) { 
+                            if(x_hetm>=2){return 9}
+                            if((x_hetm<0)&&(x_hetm>-2)){return (x_hetm+1)*x_hetm}
+                            if((x_hetm=>0)&&(x_hetm<2)){return x_hetm*x_hetm*x_hetm+1}
+                            if(x_hetm<=-2){return 1}
+                  } 
+ 
+               document.write("f="+f_het(x_het)+"<br>"); 
+               document.write("f="+f_hetm(x_hetm)+"<br>");
+ 
+           </script> 
+ </div> 
+ </body> 
+</html> 
+<!--  Hetmański Z40_JS  --> 
+        </textarea>
+    </body> 
+</html>

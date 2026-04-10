@@ -1,0 +1,20 @@
+<html>
+  <script> 
+    function fun_het() { 
+      var x_het = prompt("Podaj kolor", ""); 
+        if(x_het == 1 || x_het.toLowerCase() == "czerwony") { 
+  document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); } 
+        else if(x_het == 2 || x_het.toLowerCase() == "niebieski") { 
+  document.write('<h6 style="color:blue;">wczytałeś kolor niebieski</h6><br />'); } 
+        else if(x_het == 3 || x_het.toLowerCase() == "zielony") { 
+  document.write('<h3 style="color:green;">wczytałeś kolor zielony</h3><br />'); }
+  } 
+ </script>
+    <body>
+        <h1 style="color:green;">MENU</h1><br />
+        <h1 style="color:red;">1 - czerwony</h1><br />
+        <h1 style="color:blue;">2 - niebieski</h1><br />
+        <h1 style="color:green;">3 - zielony</h1><br />
+        <input type="button" name="nazwisko_ucznia" value="Oblicz" onclick="fun_het()" /> 
+    </body>    
+ </html>
